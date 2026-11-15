@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shyam Prasad | Angular & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Shyamprasad C V - Angular Developer with 4+ years of experience building scalable, responsive enterprise web applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23121212'/><text x='50' y='65' fill='%23D2F825' font-size='42' font-family='sans-serif' font-weight='900' text-anchor='middle'>SP</text></svg>">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Shyam Prasad Home">
+        <span class="logo-text">SP</span><span class="logo-slash">/</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#tech-stack" class="nav-link">Tech Stack</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-black btn-sm" id="openResumeBtn">
+          <span>Resume</span>
+          <svg class="btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-left reveal-left">
+          <div class="role-badge">
+            <span class="lime-square"></span>
+            <span class="role-text">SOFTWARE ENGINEER</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span>Shyam</span>
+            <span>Prasad</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Full-stack developer building scalable, reliable and user-focused web applications that solve real business problems.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-lime">
+              <span>View My Work</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/shyamprasad-cv" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/shyamprasad-c-v-3b23521a1" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="mailto:shyamprasad2000.sp@gmail.com" class="social-icon" aria-label="Send Email" title="Email: shyamprasad2000.sp@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Hero Visual (Exact Mockup Portrait) -->
+        <div class="hero-center reveal-scale">
+          <div class="hero-portrait-wrapper">
+            <img src="assets/images/hero-portrait.png" alt="Shyam Prasad - Angular & Full-Stack Developer" class="hero-portrait-img">
+          </div>
+        </div>
+
+        <!-- Right Hero Stats -->
+        <div class="hero-right reveal-right">
+          <div class="stat-card">
+            <div class="stat-number">4+ Years</div>
+            <div class="stat-label">Professional Experience</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">8+</div>
+            <div class="stat-label">Enterprise Projects</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">Full-Stack</div>
+            <div class="stat-label">Angular · Node.js · NestJS</div>
+          </div>
+
+          <div class="availability-card">
+            <span class="pulse-dot"></span>
+            <span class="availability-text">Available for opportunities</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 01: ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-badge-row">
+          <span class="section-num">01 / ABOUT</span>
+          <svg class="section-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-left reveal-left">
+            <h2 class="about-heading">
+              Building digital<br>
+              products with<br>
+              <span class="lime-highlight">purpose.</span>
+            </h2>
+          </div>
+
+          <div class="about-right reveal-right">
+            <p class="about-description">
+              I'm an Angular & Full-Stack Developer with 4+ years of experience building scalable, reliable, and user-focused web applications that solve real business problems. I enjoy turning complex enterprise workflows and data requirements into maintainable, elegant solutions that deliver tangible business value.
+            </p>
+            <p class="about-description-sub">
+              From architecting multi-tenant procurement engines and HRMS approval pipelines to integrating robust REST APIs and database transactions with PostgreSQL, Node.js, and NestJS, I focus on performance, strict type-safety, and intuitive user experiences.
+            </p>
+
+            <div class="about-features-grid">
+              <div class="feature-item reveal-init stagger-1">
+                <div class="feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="feature-text">Problem Solving</div>
+              </div>
+
+              <div class="feature-item reveal-init stagger-2">
+                <div class="feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="feature-text">Scalable Systems</div>
+              </div>
+
+              <div class="feature-item reveal-init stagger-3">
+                <div class="feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <div class="feature-text">Clean & Maintainable Code</div>
+              </div>
+
+              <div class="feature-item reveal-init stagger-4">
+                <div class="feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="feature-text">Business Impact</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: TECH STACK -->
+    <section class="section tech-section" id="tech-stack">
+      <div class="container">
+        <div class="section-badge-row reveal-init">
+          <span class="section-num">02 / TECH STACK</span>
+          <button class="view-link" id="viewAllSkillsBtn">
+            <span>View All</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="tech-grid">
+          <!-- Angular -->
+          <div class="tech-card reveal-init stagger-1" data-category="frontend">
+            <div class="tech-icon-box">
+              <img src="assets/icons/angular.svg" alt="Angular Logo" width="36" height="36">
+            </div>
+            <div class="tech-name">Angular</div>
+          </div>
+
+          <!-- Next.js -->
+          <div class="tech-card reveal-init stagger-2" data-category="fullstack">
+            <div class="tech-icon-box">
+              <img src="assets/icons/nextjs.svg" alt="Next.js Logo" width="36" height="36">
+            </div>
+            <div class="tech-name">Next.js</div>
+          </div>
+
+          <!-- Node.js -->
+          <div class="tech-card reveal-init stagger-3" data-category="backend">
+            <div class="tech-icon-box">
+              <img src="assets/icons/nodejs.svg" alt="Node.js Logo" width="36" height="36">
+            </div>
+            <div class="tech-name">Node.js</div>
+          </div>
+
+          <!-- NestJS -->
+          <div class="tech-card reveal-init stagger-4" data-category="backend">
+            <div class="tech-icon-box">
+              <img src="assets/icons/nestjs.svg" alt="NestJS Logo" width="36" height="36">
+            </div>
+            <div class="tech-name">NestJS</div>
+          </div>
+
+          <!-- TypeScript -->
+          <div class="tech-card reveal-init stagger-5" data-category="frontend">
+            <div class="tech-icon-box">
+              <img src="assets/icons/typescript.svg" alt="TypeScript Logo" width="36" height="36">
+            </div>
+            <div class="tech-name">TypeScript</div>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="tech-card reveal-init stagger-6" data-category="database">
+            <div class="tech-icon-box">
+              <img src="assets/icons/postgresql.svg" alt="PostgreSQL Logo" width="36" height="36">
+            </div>
+            <div class="tech-name">PostgreSQL</div>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="tech-card reveal-init stagger-7" data-category="database">
+            <div class="tech-icon-box">
+              <img src="assets/icons/mongodb.svg" alt="MongoDB Logo" width="36" height="36">
+            </div>
+            <div class="tech-name">MongoDB</div>
+          </div>
+
+          <!-- More Card -->
+          <div class="tech-card tech-card-more reveal-init stagger-8" id="openMoreSkillsCard" role="button" tabindex="0">
+            <div class="tech-icon-box">
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="tech-name">More</div>
+          </div>
+        </div>
+
+        <!-- Quick Skills Pill Strip from Resume -->
+        <div class="skills-chips-strip reveal-init stagger-3">
+          <span class="chip">RxJS</span>
+          <span class="chip">Angular Material</span>
+          <span class="chip">Reactive Forms</span>
+          <span class="chip">Dynamic FormArrays</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">MSSQL</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Sequelize ORM</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">JWT Auth & RBAC</span>
+          <span class="chip">Puppeteer</span>
+          <span class="chip">jsPDF & SSRS</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">Git / GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-badge-row">
+          <span class="section-num">03 / PROJECTS</span>
+          <button class="view-link" id="viewAllProjectsBtn">
+            <span>View All Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="projects-showcase-row">
+          <div class="projects-intro-col reveal-left">
+            <h2 class="section-main-title">Selected<br>Works</h2>
+            <p class="section-main-subtitle">A look at some of the products and enterprise applications I've worked on.</p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Card 1: P2P Procurement Platform -->
+            <div class="project-card reveal-init stagger-1" data-project-id="p2p">
+              <div class="project-preview-wrap">
+                <img src="assets/images/project-p2p.svg" alt="P2P Procurement Platform Preview" class="project-preview-img">
+                <div class="project-hover-overlay">
+                  <span class="btn btn-sm btn-lime">Explore Details</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h3 class="project-title">P2P Procurement Platform</h3>
+                  <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+                <p class="project-desc">
+                  End-to-end procurement solution covering Purchase Requisitions, RFQs, vendor quotations, Purchase Orders, commercial evaluations, and supplier portals.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">NestJS</span>
+                  <span class="project-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Aurex Auditing Software -->
+            <div class="project-card reveal-init stagger-2" data-project-id="aurex">
+              <div class="project-preview-wrap">
+                <img src="assets/images/project-aurex.svg" alt="Aurex Auditing Software Preview" class="project-preview-img">
+                <div class="project-hover-overlay">
+                  <span class="btn btn-sm btn-lime">Explore Details</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h3 class="project-title">Aurex – Auditing Software</h3>
+                  <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+                <p class="project-desc">
+                  Enterprise audit management platform to plan, execute, and track compliance audits, risk controls, and automated governance rules with precision.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MSSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Lulu Icon (HRMS) -->
+            <div class="project-card reveal-init stagger-3" data-project-id="lulu">
+              <div class="project-preview-wrap">
+                <img src="assets/images/project-lulu.svg" alt="Lulu Icon HRMS Preview" class="project-preview-img">
+                <div class="project-hover-overlay">
+                  <span class="btn btn-sm btn-lime">Explore Details</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h3 class="project-title">Lulu Icon (HRMS)</h3>
+                  <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+                <p class="project-desc">
+                  Comprehensive human resource management system handling multi-tier employee rosters, leave workflows, attendance, and corporate approvals.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MSSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Projects Grid (Visible on click or expandable) -->
+        <div class="more-projects-section" id="moreProjectsContainer">
+          <div class="projects-grid extra-projects-grid">
+            <!-- Card 4: CAFM System -->
+            <div class="project-card reveal-init stagger-1" data-project-id="cafm">
+              <div class="project-preview-wrap">
+                <img src="assets/images/project-cafm.svg" alt="CAFM Facility Management Preview" class="project-preview-img">
+                <div class="project-hover-overlay">
+                  <span class="btn btn-sm btn-lime">Explore Details</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h3 class="project-title">CAFM – Multi-Tenant Facility Management</h3>
+                  <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+                <p class="project-desc">
+                  Computer-Aided Facility Management system for tenant service requests, asset maintenance schedules, and building operation telemetry.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">REST APIs</span>
+                  <span class="project-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: AlShareef CRM -->
+            <div class="project-card reveal-init stagger-2" data-project-id="alshareef">
+              <div class="project-preview-wrap">
+                <img src="assets/images/project-alshareef.svg" alt="AlShareef CRM Preview" class="project-preview-img">
+                <div class="project-hover-overlay">
+                  <span class="btn btn-sm btn-lime">Explore Details</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h3 class="project-title">AlShareef – Employee CRM Module</h3>
+                  <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+                <p class="project-desc">
+                  CRM extension streamlining staff records, assignment lifecycles, role permissions, and seamless backend API data synchronization.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">RxJS</span>
+                  <span class="project-tag">Node.js</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Lulu Business Suite -->
+            <div class="project-card reveal-init stagger-3" data-project-id="lulubiz">
+              <div class="project-preview-wrap">
+                <img src="assets/images/project-lulubiz.svg" alt="Lulu Business Suite Preview" class="project-preview-img">
+                <div class="project-hover-overlay">
+                  <span class="btn btn-sm btn-lime">Explore Details</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <h3 class="project-title">Lulu Business Suite (MarketConnect & Leasing)</h3>
+                  <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+                <p class="project-desc">
+                  Integrated enterprise retail platforms spanning vendor marketplaces, commercial property leasing contracts, and maintenance ticketing.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">Sequelize</span>
+                  <span class="project-tag">MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: EXPERIENCE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-badge-row reveal-init">
+          <span class="section-num">04 / EXPERIENCE</span>
+          <svg class="section-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </div>
+
+        <div class="experience-layout">
+          <div class="experience-left reveal-left">
+            <h2 class="experience-title">
+              My Professional<br>Journey
+            </h2>
+            <p class="experience-intro">
+              4+ years of progressive experience delivering enterprise-grade web applications, specializing in Angular frontends and robust full-stack solutions.
+            </p>
+          </div>
+
+          <div class="experience-timeline">
+            <!-- Role 1: Seeroo IT Solutions -->
+            <div class="timeline-item active reveal-init stagger-1">
+              <div class="timeline-marker">
+                <span class="timeline-dot current-dot"></span>
+                <span class="timeline-line"></span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="company-role-wrap">
+                    <h3 class="company-name">Seeroo IT Solutions</h3>
+                    <div class="role-designation">Software Engineer</div>
+                  </div>
+                  <div class="timeline-meta">
+                    <span class="timeline-badge current-badge">Mar 2025 – Present</span>
+                    <span class="timeline-location">Kochi, India</span>
+                  </div>
+                </div>
+                <div class="timeline-body">
+                  <p class="timeline-desc">
+                    Develop enterprise web applications primarily using Angular, TypeScript, JavaScript, RxJS, Angular Material, and Bootstrap. Work across P2P Procurement, AlShareef Employee Module, RECO Support, and CAFM modules with core focus on frontend architecture and full-stack API integration.
+                  </p>
+                  <ul class="timeline-bullet-list">
+                    <li>Delivered end-to-end P2P procurement workflows: Purchase Requisitions, RFQs, vendor quotations, Purchase Orders, evaluations, and supplier portals.</li>
+                    <li>Built complex Reactive Forms, dynamic FormArrays, reusable tables, validations, calculations, file uploads, and role-based workflows.</li>
+                    <li>Contributed full-stack backend development using Node.js, Next.js, and PostgreSQL for REST APIs, business logic, and database operations.</li>
+                    <li>Managed authentication, authorization, JWT handling, API integration, error handling, application-level services, and production troubleshooting.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 2: Beinex Consulting -->
+            <div class="timeline-item reveal-init stagger-2">
+              <div class="timeline-marker">
+                <span class="timeline-dot"></span>
+                <span class="timeline-line"></span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="company-role-wrap">
+                    <h3 class="company-name">Beinex Consulting</h3>
+                    <div class="role-designation">Software Engineer</div>
+                  </div>
+                  <div class="timeline-meta">
+                    <span class="timeline-badge">Nov 2024 – Mar 2025</span>
+                    <span class="timeline-location">Kochi, India</span>
+                  </div>
+                </div>
+                <div class="timeline-body">
+                  <p class="timeline-desc">
+                    Contributed to Aurex, an enterprise auditing application for risk analysis and management. Developed reusable, responsive Angular components, implemented Reactive Forms, dynamic controls, validations, and business rules, and collaborated with cross-functional teams to support application performance and maintainable frontend development.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 3: Mantles Solution -->
+            <div class="timeline-item reveal-init stagger-3">
+              <div class="timeline-marker">
+                <span class="timeline-dot"></span>
+                <span class="timeline-line"></span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="company-role-wrap">
+                    <h3 class="company-name">Mantles Solution</h3>
+                    <div class="role-designation">Junior Software Developer</div>
+                  </div>
+                  <div class="timeline-meta">
+                    <span class="timeline-badge">Apr 2022 – Nov 2024</span>
+                    <span class="timeline-location">Kochi, India</span>
+                  </div>
+                </div>
+                <div class="timeline-body">
+                  <p class="timeline-desc">
+                    Developed and maintained enterprise applications including Lulu Icon (HRMS), Lulu CRM, Lulu MarketConnect, Lulu Maintenance, and Lulu Leasing.
+                  </p>
+                  <ul class="timeline-bullet-list">
+                    <li>Built responsive Angular interfaces, reusable components, dashboards, tables, modals, forms, and business workflows using Angular, TypeScript, Bootstrap, and Angular Material.</li>
+                    <li>Implemented Reactive Forms and complex validations, including dynamic fields, conditional rules, calculations, and multi-step workflows.</li>
+                    <li>Integrated Angular applications with REST APIs and backend services using Node.js and Express.js; implemented database operations and API functionality with Sequelize.</li>
+                    <li>Worked with MSSQL, MySQL, and MongoDB, including database queries, associations, transactions, and data processing.</li>
+                    <li>Implemented authentication, authorization, role-based access, approval workflows, master data management, reporting, document processing, and PDFKit/jsPDF exports.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 4: Lumina Technolab -->
+            <div class="timeline-item reveal-init stagger-4">
+              <div class="timeline-marker">
+                <span class="timeline-dot"></span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="company-role-wrap">
+                    <h3 class="company-name">Lumina Technolab</h3>
+                    <div class="role-designation">MEAN Stack Intern</div>
+                  </div>
+                  <div class="timeline-meta">
+                    <span class="timeline-badge">Oct 2021 – Apr 2022</span>
+                    <span class="timeline-location">Kochi, India</span>
+                  </div>
+                </div>
+                <div class="timeline-body">
+                  <p class="timeline-desc">
+                    Gained intensive hands-on experience in full-stack web development with Angular, Node.js, Express.js, and MongoDB; built CRUD APIs and responsive user interfaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Certifications Row -->
+        <div class="edu-cert-grid">
+          <div class="edu-card reveal-init stagger-1">
+            <div class="edu-cert-header">
+              <div class="edu-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <span class="edu-tag">EDUCATION</span>
+            </div>
+            <h4 class="edu-degree">BSc Computer Science</h4>
+            <div class="edu-school">University of Calicut</div>
+            <div class="edu-year">Graduated in 2021</div>
+          </div>
+
+          <div class="edu-card reveal-init stagger-2">
+            <div class="edu-cert-header">
+              <div class="cert-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="edu-tag">CERTIFICATIONS</span>
+            </div>
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-name">NACTET Certificate in MEA(R)N Stack Web Development</div>
+                <div class="cert-score">Grade: A+ Distinction</div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-name">Shape AI Certification in JavaScript & React.js</div>
+                <div class="cert-score">Comprehensive Frontend Engineering</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 05: CTA BANNER -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-banner reveal-scale">
+          <div class="cta-wave-bg"></div>
+          <div class="cta-content">
+            <div class="cta-left">
+              <h2 class="cta-headline">Let's build<br>something great.</h2>
+            </div>
+            <div class="cta-center">
+              <p class="cta-text">
+                Have a project in mind or an opportunity to collaborate? I'd love to hear from you.
+              </p>
+            </div>
+            <div class="cta-right">
+              <button class="btn btn-black cta-btn" id="ctaContactBtn">
+                <span>Get in Touch</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-badge-row reveal-init">
+          <span class="section-num">05 / CONTACT</span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <h2 class="contact-title">Let's Connect</h2>
+            <p class="contact-subtitle">
+              Feel free to reach out for frontend engineering roles, enterprise consulting, or full-stack opportunities.
+            </p>
+
+            <div class="contact-items">
+              <a href="mailto:shyamprasad2000.sp@gmail.com" class="contact-item-card">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Email</div>
+                  <div class="contact-item-val">shyamprasad2000.sp@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="tel:+918078159348" class="contact-item-card">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Phone</div>
+                  <div class="contact-item-val">+91 8078159348</div>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/shyamprasad-c-v-3b23521a1" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">LinkedIn</div>
+                  <div class="contact-item-val">linkedin.com/in/shyamprasad-c-v-3b23521a1</div>
+                </div>
+              </a>
+
+              <div class="contact-item-card location-card">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Location</div>
+                  <div class="contact-item-val">Kochi, Kerala, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card reveal-right">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <form id="contactForm" onsubmit="return false;">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" placeholder="e.g. Alex Henderson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Your Email</label>
+                <input type="email" id="contactEmail" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input type="text" id="contactSubject" placeholder="Opportunity / Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="4" placeholder="Hi Shyam, I'd like to discuss an opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-lime btn-full" id="submitFormBtn">
+                <span>Send Message</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+            <div id="formSuccessMessage" class="form-success-banner" style="display: none;">
+              ✓ Thank you! Opening your email client to send this message directly to Shyam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="logo">
+          <span class="logo-text">SP</span><span class="logo-slash">/</span>
+        </a>
+        <p class="footer-copy">© 2026 Shyamprasad C V. All rights reserved.</p>
+      </div>
+
+      <div class="footer-center">
+        <span class="footer-tagline">Crafted with precision & purpose</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: ALL SKILLS & TECH STACK -->
+  <div class="modal-overlay" id="skillsModal" aria-hidden="true">
+    <div class="modal-box modal-lg">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Comprehensive Technical Skills</h3>
+          <p class="modal-subtitle">Full inventory of technologies, libraries, and architectural practices.</p>
+        </div>
+        <button class="modal-close-btn" id="closeSkillsModal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="skills-category">
+          <h4 class="skills-cat-title">Frontend Engineering</h4>
+          <div class="skills-tags-wrap">
+            <span class="cat-pill"><img src="assets/icons/angular.svg" width="16" height="16"> Angular (v2 - Latest)</span>
+            <span class="cat-pill"><img src="assets/icons/typescript.svg" width="16" height="16"> TypeScript</span>
+            <span class="cat-pill">JavaScript (ES6+)</span>
+            <span class="cat-pill"><img src="assets/icons/rxjs.svg" width="16" height="16"> RxJS (Observables & Streams)</span>
+            <span class="cat-pill"><img src="assets/icons/material.svg" width="16" height="16"> Angular Material</span>
+            <span class="cat-pill"><img src="assets/icons/bootstrap.svg" width="16" height="16"> Bootstrap 5</span>
+            <span class="cat-pill">HTML5 & CSS3</span>
+            <span class="cat-pill">Reactive Forms & Dynamic FormArrays</span>
+            <span class="cat-pill">PrimeNG</span>
+            <span class="cat-pill">ngx-bootstrap</span>
+            <span class="cat-pill">DataTables</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h4 class="skills-cat-title">Backend & API Development</h4>
+          <div class="skills-tags-wrap">
+            <span class="cat-pill"><img src="assets/icons/nodejs.svg" width="16" height="16"> Node.js</span>
+            <span class="cat-pill"><img src="assets/icons/express.svg" width="16" height="16"> Express.js</span>
+            <span class="cat-pill"><img src="assets/icons/nestjs.svg" width="16" height="16"> NestJS</span>
+            <span class="cat-pill"><img src="assets/icons/nextjs.svg" width="16" height="16"> Next.js</span>
+            <span class="cat-pill">RESTful API Design</span>
+            <span class="cat-pill">SOAP Integration</span>
+            <span class="cat-pill">JWT Handling & RBAC</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h4 class="skills-cat-title">Databases & ORMs</h4>
+          <div class="skills-tags-wrap">
+            <span class="cat-pill"><img src="assets/icons/postgresql.svg" width="16" height="16"> PostgreSQL</span>
+            <span class="cat-pill"><img src="assets/icons/mssql.svg" width="16" height="16"> MS SQL Server (MSSQL)</span>
+            <span class="cat-pill"><img src="assets/icons/mysql.svg" width="16" height="16"> MySQL</span>
+            <span class="cat-pill"><img src="assets/icons/mongodb.svg" width="16" height="16"> MongoDB</span>
+            <span class="cat-pill">Sequelize ORM</span>
+            <span class="cat-pill">Database Transactions & Queries</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h4 class="skills-cat-title">Reporting, Utilities & Practices</h4>
+          <div class="skills-tags-wrap">
+            <span class="cat-pill">Puppeteer</span>
+            <span class="cat-pill">PDFKit & jsPDF</span>
+            <span class="cat-pill">SSRS Report Viewer</span>
+            <span class="cat-pill"><img src="assets/icons/git.svg" width="16" height="16"> Git & GitHub</span>
+            <span class="cat-pill"><img src="assets/icons/postman.svg" width="16" height="16"> Postman</span>
+            <span class="cat-pill">npm / pnpm</span>
+            <span class="cat-pill">Role-Based Access Control</span>
+            <span class="cat-pill">Production Debugging</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: RESUME PREVIEW & PRINT -->
+  <div class="modal-overlay" id="resumeModal" aria-hidden="true">
+    <div class="modal-box modal-xl">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Shyamprasad C V — Resume</h3>
+          <p class="modal-subtitle">Official Professional Resume</p>
+        </div>
+        <div class="resume-modal-actions">
+          <button class="btn btn-sm btn-lime" onclick="window.print();">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button class="modal-close-btn" id="closeResumeModal">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body printable-resume-content">
+        <!-- Resume Paper Container -->
+        <div class="resume-paper">
+          <div class="resume-paper-header">
+            <h1 class="r-name">SHYAMPRASAD C V</h1>
+            <div class="r-role">ANGULAR DEVELOPER</div>
+            <div class="r-contact-line">
+              <a href="mailto:shyamprasad2000.sp@gmail.com">shyamprasad2000.sp@gmail.com</a> |
+              <a href="tel:+918078159348">+91 8078159348</a> |
+              <a href="https://linkedin.com/in/shyamprasad-c-v-3b23521a1" target="_blank">linkedin.com/in/shyamprasad-c-v-3b23521a1</a>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-sec-title">PROFESSIONAL SUMMARY</h3>
+            <p class="r-text">
+              Angular Developer with nearly 5 years of experience building scalable, responsive enterprise web applications. Strong hands-on experience with Angular, TypeScript, JavaScript, RxJS, Angular Material, reusable components, Reactive Forms, complex validations, and REST API integration. Also experienced in backend development using Node.js, Express.js, NestJS, and Next.js, with database experience in PostgreSQL, MS SQL Server, MySQL, and MongoDB. Skilled in debugging, authentication, role-based workflows, performance improvement, and delivering maintainable solutions across the software development lifecycle.
+            </p>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-sec-title">TECHNICAL SKILLS</h3>
+            <div class="r-skills-table">
+              <div><strong>Frontend:</strong> Angular, TypeScript, JavaScript, HTML5, CSS3, RxJS, Angular Material, Bootstrap</div>
+              <div><strong>Backend:</strong> Node.js, Express.js, NestJS, Next.js</div>
+              <div><strong>Databases:</strong> PostgreSQL, MS SQL Server (MSSQL), MySQL, MongoDB</div>
+              <div><strong>Libraries & Reporting:</strong> Sequelize, PrimeNG, ngx-bootstrap, DataTables, Puppeteer, PDFKit, jsPDF, SSRS Report Viewer</div>
+              <div><strong>Tools & Practices:</strong> Git, GitHub, npm, Postman, REST APIs, Reactive Forms, JWT, role-based access</div>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-sec-title">PROFESSIONAL EXPERIENCE</h3>
+
+            <div class="r-exp-entry">
+              <div class="r-exp-head">
+                <strong>Seeroo IT Solutions</strong> | Kochi, India | Mar 2025 – Present
+              </div>
+              <div class="r-exp-sub">Software Engineer</div>
+              <ul class="r-bullets">
+                <li>Develop enterprise web applications primarily using Angular, TypeScript, JavaScript, HTML, CSS, RxJS, Angular Material, and Bootstrap.</li>
+                <li>Work across P2P Procurement, AlShareef Employee Module, RECO Support, and initial CAFM modules, with a primary focus on frontend development.</li>
+                <li>Deliver P2P procurement features covering Purchase Requisitions, RFQs, quotations, Purchase Orders, supplier management, approvals, technical and commercial evaluations, and supplier portal workflows.</li>
+                <li>Build complex Reactive Forms, dynamic FormArrays, reusable components, tables, validations, calculations, file uploads, and business workflows.</li>
+                <li>Contribute to frontend and backend development in P2P using Angular, Node.js, Next.js, and PostgreSQL; develop REST APIs and implement backend business logic and database operations.</li>
+                <li>Work on authentication, authorization, JWT handling, API integration, error handling, and application-level services; troubleshoot functional, UI, API, and production issues.</li>
+                <li>Collaborate with cross-functional teams through requirement analysis, development, testing, debugging, deployment, and production support.</li>
+              </ul>
+            </div>
+
+            <div class="r-exp-entry">
+              <div class="r-exp-head">
+                <strong>Beinex Consulting</strong> | Nov 2024 – Mar 2025
+              </div>
+              <div class="r-exp-sub">Software Engineer</div>
+              <ul class="r-bullets">
+                <li>Contributed to Aurex, an auditing application for risk analysis and management.</li>
+                <li>Developed reusable, responsive Angular components and implemented Reactive Forms, dynamic controls, validations, and business rules.</li>
+                <li>Worked with cross-functional teams to support application performance and maintainable frontend development.</li>
+              </ul>
+            </div>
+
+            <div class="r-exp-entry">
+              <div class="r-exp-head">
+                <strong>Mantles Solution</strong> | Apr 2022 – Nov 2024
+              </div>
+              <div class="r-exp-sub">Junior Software Developer</div>
+              <ul class="r-bullets">
+                <li>Developed and maintained enterprise applications including Lulu Icon (HRMS), Lulu CRM, Lulu MarketConnect, Lulu Maintenance, and Lulu Leasing.</li>
+                <li>Built responsive Angular interfaces, reusable components, dashboards, tables, modals, forms, and business workflows using Angular, TypeScript, Bootstrap, and Angular Material.</li>
+                <li>Implemented Reactive Forms and complex validations, including dynamic fields, conditional rules, calculations, and multi-step workflows.</li>
+                <li>Integrated Angular applications with REST APIs and backend services using Node.js and Express.js; implemented database operations and API functionality with Sequelize.</li>
+                <li>Worked with MSSQL, MySQL, and MongoDB, including database queries, associations, transactions, and data processing.</li>
+                <li>Implemented authentication, authorization, role-based access, approval workflows, master data management, reporting, and business validations.</li>
+                <li>Integrated SOAP and third-party APIs; supported PDF/report generation, file uploads, document processing, Excel imports, production troubleshooting, and performance-related fixes.</li>
+              </ul>
+            </div>
+
+            <div class="r-exp-entry">
+              <div class="r-exp-head">
+                <strong>Lumina Technolab</strong> | Oct 2021 – Apr 2022
+              </div>
+              <div class="r-exp-sub">MEAN Stack Intern</div>
+              <ul class="r-bullets">
+                <li>Gained hands-on experience in MEAN stack development and assisted with full-stack application development, debugging, database management, and API integration.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-sec-title">SELECTED PROJECTS</h3>
+            <div class="r-proj-entry">
+              <strong>P2P – Procurement Management Application</strong> | <em>Angular, NestJS, PostgreSQL</em>
+              <p>Developed procurement workflows across requisitions, RFQs, quotations, purchase orders, supplier management, approvals, validations, and role-based access; contributed to frontend, backend, and database integration.</p>
+            </div>
+            <div class="r-proj-entry">
+              <strong>AlShareef – Employee Management Module</strong> | <em>Angular</em>
+              <p>Extended an existing CRM with employee-related workflows and data management features; implemented frontend functionality and integrated backend APIs.</p>
+            </div>
+            <div class="r-proj-entry">
+              <strong>CAFM – Multi-Tenant Facility Management System</strong> | <em>Angular</em>
+              <p>Worked on facility operations, service requests, and maintenance workflows; built reusable Angular components and integrated REST APIs for a multi-tenant application.</p>
+            </div>
+            <div class="r-proj-entry">
+              <strong>Aurex – Enterprise Auditing Software</strong> | <em>Angular, TypeScript</em>
+              <p>Contributed to frontend components, Reactive Forms, validations, API integration, business workflows, and application support.</p>
+            </div>
+            <div class="r-proj-entry">
+              <strong>Lulu Business Applications</strong> | <em>Angular, Node.js, MSSQL, MySQL, MongoDB</em>
+              <p>Worked on HRMS, CRM, MarketConnect, Maintenance, and Leasing applications supporting employee, customer, market, maintenance, and leasing operations.</p>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-sec-title">EDUCATION</h3>
+            <p><strong>BSc Computer Science</strong> | University of Calicut | Graduated in 2021</p>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-sec-title">CERTIFICATIONS</h3>
+            <ul class="r-bullets">
+              <li>NACTET Certificate in MEA(R)N Stack Web Development – A+ grade</li>
+              <li>Shape AI Certification in JavaScript and React.js</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: PROJECT DETAIL -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true">
+    <div class="modal-box modal-lg">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="pmTitle">Project Title</h3>
+          <p class="modal-subtitle" id="pmSubtitle">Enterprise Solution Case Study</p>
+        </div>
+        <button class="modal-close-btn" id="closeProjectModal">&times;</button>
+      </div>
+      <div class="modal-body" id="pmBody">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
