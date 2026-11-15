@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 
 export default function Hero() {
@@ -79,9 +79,18 @@ export default function Hero() {
               <a
                 href="mailto:shyamprasad2000.sp@gmail.com"
                 aria-label="Send Email"
+                title="shyamprasad2000.sp@gmail.com"
                 className="w-10 h-10 rounded-full border border-neutral-300 bg-white/80 flex items-center justify-center text-brand-dark hover:bg-brand-lime hover:text-brand-dark hover:border-brand-lime transition-all duration-200 shadow-sm"
               >
                 <Mail className="w-4 h-4" />
+              </a>
+              <a
+                href="tel:+918078159348"
+                aria-label="Call +91 8078159348"
+                title="+91 8078159348"
+                className="w-10 h-10 rounded-full border border-neutral-300 bg-white/80 flex items-center justify-center text-brand-dark hover:bg-brand-lime hover:text-brand-dark hover:border-brand-lime transition-all duration-200 shadow-sm"
+              >
+                <Phone className="w-4 h-4" />
               </a>
             </div>
           </motion.div>

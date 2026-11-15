@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Phone, Mail, MessageSquare } from "lucide-react";
 
 export default function CtaBanner() {
   return (
@@ -27,20 +27,43 @@ export default function CtaBanner() {
             </div>
 
             {/* Center Explainer */}
-            <div className="lg:col-span-4">
-              <p className="text-base sm:text-lg text-brand-dark/85 font-medium leading-relaxed">
+            <div className="lg:col-span-4 flex flex-col gap-3">
+              <p className="text-base sm:text-lg text-brand-dark/90 font-medium leading-relaxed">
                 Have a project in mind or an opportunity to collaborate? I'd love to hear from you.
               </p>
+              <div className="flex flex-col gap-1.5 text-xs font-bold text-brand-dark">
+                <a
+                  href="tel:+918078159348"
+                  className="inline-flex items-center gap-2 hover:underline w-fit"
+                >
+                  <Phone className="w-4 h-4 shrink-0" />
+                  <span>+91 8078159348</span>
+                </a>
+                <a
+                  href="mailto:shyamprasad2000.sp@gmail.com"
+                  className="inline-flex items-center gap-2 hover:underline w-fit"
+                >
+                  <Mail className="w-4 h-4 shrink-0" />
+                  <span>shyamprasad2000.sp@gmail.com</span>
+                </a>
+              </div>
             </div>
 
-            {/* Right Action Button */}
-            <div className="lg:col-span-3 flex lg:justify-end">
+            {/* Right Action Buttons */}
+            <div className="lg:col-span-3 flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end justify-center">
+              <a
+                href="tel:+918078159348"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-brand-dark text-white font-bold text-sm tracking-wide transition-all duration-200 hover:bg-neutral-800 hover:shadow-xl active:scale-95 group w-full sm:w-auto lg:w-full"
+              >
+                <Phone className="w-4 h-4 text-brand-lime" />
+                <span>Call +91 8078159348</span>
+              </a>
               <a
                 href="mailto:shyamprasad2000.sp@gmail.com"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-brand-dark text-white font-bold text-sm tracking-wide transition-all duration-200 hover:bg-neutral-800 hover:shadow-xl active:scale-95 group"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/90 text-brand-dark font-bold text-sm tracking-wide transition-all duration-200 hover:bg-white hover:shadow-md active:scale-95 group w-full sm:w-auto lg:w-full border border-neutral-300"
               >
-                <span>Get in Touch</span>
-                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <Mail className="w-4 h-4" />
+                <span>Send Email</span>
               </a>
             </div>
           </div>

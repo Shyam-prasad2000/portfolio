@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, ArrowUp } from "lucide-react";
+import { Mail, Phone, ArrowUp } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 
 export default function Footer() {
@@ -11,9 +11,9 @@ export default function Footer() {
   return (
     <footer className="border-t border-brand-border bg-canvas py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-12">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-8 pb-12 border-b border-brand-border">
-          {/* Logo & Tagline */}
-          <div className="flex flex-col gap-2">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pb-12 border-b border-brand-border">
+          {/* Logo & Direct Contact Details */}
+          <div className="flex flex-col gap-3">
             <a href="#home" className="flex items-center gap-0.5 text-2xl font-heading font-extrabold text-brand-dark">
               <span>SP</span>
               <span className="text-brand-lime">/</span>
@@ -21,15 +21,26 @@ export default function Footer() {
             <p className="text-xs sm:text-sm text-brand-muted">
               Angular & Full-Stack Developer · Kochi, India
             </p>
+            <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-brand-dark mt-1">
+              <a href="tel:+918078159348" className="inline-flex items-center gap-1.5 hover:underline">
+                <Phone className="w-3.5 h-3.5 text-neutral-500" />
+                <span>+91 8078159348</span>
+              </a>
+              <span className="text-neutral-300">·</span>
+              <a href="mailto:shyamprasad2000.sp@gmail.com" className="inline-flex items-center gap-1.5 hover:underline">
+                <Mail className="w-3.5 h-3.5 text-neutral-500" />
+                <span>shyamprasad2000.sp@gmail.com</span>
+              </a>
+            </div>
           </div>
 
           {/* Socials & Top Trigger */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a
               href="https://github.com/shyamprasad-cv"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub"
+              aria-label="GitHub Profile"
               className="w-10 h-10 rounded-full border border-neutral-300 bg-white flex items-center justify-center text-brand-dark hover:bg-brand-dark hover:text-white transition-all shadow-sm"
             >
               <GithubIcon className="w-4 h-4" />
@@ -38,14 +49,23 @@ export default function Footer() {
               href="https://linkedin.com/in/shyamprasad-c-v-3b23521a1"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="LinkedIn Profile"
               className="w-10 h-10 rounded-full border border-neutral-300 bg-white flex items-center justify-center text-brand-dark hover:bg-[#0077B5] hover:text-white transition-all shadow-sm"
             >
               <LinkedinIcon className="w-4 h-4" />
             </a>
             <a
+              href="tel:+918078159348"
+              aria-label="Call +91 8078159348"
+              title="Call +91 8078159348"
+              className="w-10 h-10 rounded-full border border-neutral-300 bg-white flex items-center justify-center text-brand-dark hover:bg-brand-lime hover:text-brand-dark transition-all shadow-sm"
+            >
+              <Phone className="w-4 h-4" />
+            </a>
+            <a
               href="mailto:shyamprasad2000.sp@gmail.com"
-              aria-label="Email"
+              aria-label="Send Email"
+              title="shyamprasad2000.sp@gmail.com"
               className="w-10 h-10 rounded-full border border-neutral-300 bg-white flex items-center justify-center text-brand-dark hover:bg-brand-lime hover:text-brand-dark transition-all shadow-sm"
             >
               <Mail className="w-4 h-4" />
