@@ -20,7 +20,7 @@ export default function Experience() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-20">
           
           {/* Left Column: Heading */}
-          <div className="lg:col-span-4 sticky top-28">
+          <div className="lg:col-span-4 lg:sticky lg:top-28">
             <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-brand-dark tracking-tight leading-[1.05] mb-4">
               My Professional<br />
               Journey

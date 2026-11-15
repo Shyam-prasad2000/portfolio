@@ -88,7 +88,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
         </nav>
 
         {/* Action Button: Resume */}
-        <div className="hidden sm:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3">
           <button
             onClick={onOpenResume}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-dark text-white text-xs font-bold tracking-wide transition-all duration-200 hover:bg-neutral-800 hover:shadow-md active:scale-95"
@@ -99,7 +99,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
         </div>
 
         {/* Mobile Menu Toggle Button */}
-        <div className="flex sm:hidden items-center gap-2">
+        <div className="flex md:hidden items-center gap-2">
           <button
             onClick={onOpenResume}
             className="p-2 rounded-full bg-brand-dark text-white text-xs font-semibold"
@@ -124,7 +124,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="sm:hidden bg-white border-b border-brand-border px-6 py-5 flex flex-col gap-4 shadow-lg overflow-hidden"
+            className="md:hidden bg-white border-b border-brand-border px-6 py-5 flex flex-col gap-4 shadow-lg overflow-hidden"
           >
             {navItems.map((item) => (
               <a
